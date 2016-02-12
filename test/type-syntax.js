@@ -40,7 +40,9 @@ describe("type syntax", function() {
 
     // Unions & Intersections
     check("var a: number | string | boolean = 26;");
+    check("var a: ?(number | string) = 26;");
     check("var a: number & string & boolean = 26;");
+    check("var a: ?(number & string) = 26;");
 
     // Types
     check("var a: A = 5;");
