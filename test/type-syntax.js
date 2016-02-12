@@ -73,6 +73,7 @@ describe("type syntax", function() {
 
     check("declare function foo(c: C): void;");
     check("declare function foo(c: C, b: B): void;");
+    check("declare function foo(a: {b?: C}): void;");
     check("declare function foo(c: (e: Event) => void, b: B): void;");
     check("declare function foo(c: C, ...d: Array<D>): void;");
     check("declare function foo(c: C, d?: Array<D>): void;");
