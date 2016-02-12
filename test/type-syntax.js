@@ -72,6 +72,7 @@ describe("type syntax", function() {
 
     // Declare
     check("declare var A: string;");
+    check("declare var A: {b: (c: any) => any};")
 
     check("declare function foo(c: C): void;");
     check("declare function foo(c: C, b: B): void;");
