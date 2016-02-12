@@ -93,6 +93,8 @@ describe("type syntax", function() {
     check("class A<X, Y> {}");
     check("class A<X> extends B<Y> {}");
     check("function a<T>(y: Y<T>): T {}");
+    check("declare function foo<C, T>(c: C): C;");
+    check("var c: {<T>(a: T): T};");
     check("class A {" + eol + "  foo<T>(a: number): string {}" + eol + "}");
 
     // Interfaces
