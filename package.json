@@ -28,7 +28,7 @@
     "fs": false
   },
   "dependencies": {
-    "ast-types": "git://github.com/garetht/ast-types.git#call-property-default-fix",
+    "ast-types": "git://github.com/garetht/ast-types.git#general-fixes",
     "esprima": "~2.7.1",
     "private": "~0.1.5",
     "source-map": "~0.5.0"
