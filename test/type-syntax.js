@@ -81,6 +81,7 @@ describe("type syntax", function() {
     check("declare function foo(c: C, ...d: Array<D>): void;");
     check("declare function foo(c: C, d?: Array<D>): void;");
     check("declare class C {x: string}");
+    check("declare class C<T> {x: string}");
     check("declare module M {" + eol + "  declare function foo(c: C): void;" + eol + "}");
 
     // Classes
